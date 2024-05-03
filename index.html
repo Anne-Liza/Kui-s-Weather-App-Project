@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+</head>
+<body>
+   <form id="searchform">
+    <input type="search"
+    placeholder="Enter your City"
+    required
+    class="search-input"
+    id="search-input">
+    <input type="submit" value="search"
+    class="search-button">
+    </form>
+    <main>
+        <div class="current-weather">
+            <div>
+                <h1 class="current-city" id="current-city">, Kenya</h1>
+                <p class="current-details">
+                    <span id="current-date"></span>
+                    moderate rain <br>
+                    humidity: <strong>87%</strong>,
+                    wind: <strong>7.2km/h</strong>
+                </p>
+            </div>
+
+            <div class="current-temperature">
+                <span class="current-temperature-icon">icon</span>
+                <span class="current-temperature-value" id="current-temperature">21</span>
+                <span class="current-temperature-unit">celcius</span>
+            </div>
+        </div>
+    </main> 
+
+
+    <div class="forecast-weather">
+        <div class="forecast-temperature">
+            <span class="forecast-temperature-icon">icon</span>
+            <span class="forecast-temperature-value" id="current-temperature">21</span>
+            <span class="forecast-temperature-unit">celcius</span>
+        </div>
+
+    </div>
+    <footer>
+        <p>
+            This app was coded by <a href="#">Anne Wangui</a> on <a href="#">github</a> and hosted on <a href="#">Netlify.</a>
+        </p>
+    </footer>
+</body>
+</html>

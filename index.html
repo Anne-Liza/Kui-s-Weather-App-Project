@@ -7,47 +7,50 @@
 
 </head>
 <body>
-   <form id="search-form">
-    <input type="search"
-    placeholder="Enter your City"
-    required
-    class="search-input"
-    id="search-input">
-    <input type="submit" value="Search"
-    class="search-button">
-    </form>
+  <div class="weather-app">
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="search-input"
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
     <main>
-        <div class="current-weather">
-            <div>
-                <h1 class="current-city" id="current-city">,Paris</h1>
-                <p class="current-details">
-                    <span id="current-date"></span>
-                    moderate rain <br>
-                    humidity: <strong>87%</strong>,
-                    wind: <strong>7.2km/h</strong>
-                </p>
-            </div>
-
-            <div class="current-temperature">
-                <span class="current-temperature-icon">icon</span>
-                <span class="current-temperature-value" id="current-temperature-main">21</span>
-                <span class="current-temperature-unit">celcius</span>
-            </div>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">Paris</h1>
+          <p class="current-details">
+            <span id="current-date"></span>, <span id="current-condition"></span><br />
+            <div class="current-humidity">Humidity:<strong>87%</strong></div>
+            <div class="current-wind">Wind:<strong>60km/h</strong></div>
+          </p>
         </div>
-    </main> 
-
-
-    <div class="forecast-weather">
-        <div class="forecast-day">
-            <div class = "forecast-date"> ${day} </div>
-            <div class = "weather-forecast-icon">💕</div>
-            <div class  = "weather- forecast-temperature">
-                <div class = "weather-forecast-temperature"><strong>15</strong></div>
-                <div class =" weather-forecast-temperature">9</div>
-            </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span
+          ><span class="current-temperature-value" id="current-temperature"
+            >24</span
+          ><span class="current-temperature-unit">°C</span>
         </div>
-
-    </div>
+      </div>
+      
+      <div id="forecast" class="forecast-weather">
+        <div class="row">
+          <div class="col">
+            <div class="weather-forecast-date">Sun</div>
+            <div class="weather-forecast-icon">☀️</div>
+            <div class="weather-forecast-temperature">
+              <span class="forecast-max-temp"><strong>15</strong></span>
+              <span class="forecast-min-temp">9</span>               
+            </div>
+          </div>
+        </div> 
+      </div>
+    </main>
     <footer>
         <p>
             This app was coded by <a href="https://github.com/Anne-Liza?tab=repositories">Anne Wangui</a> on <a href="https://github.com/Anne-Liza/Kui-s-Weather-App-Project">Github</a> and hosted on <a href="https://my-forecast-weather-app.netlify.app/">Netlify.</a>

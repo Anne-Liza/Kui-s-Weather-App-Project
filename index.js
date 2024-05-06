@@ -67,7 +67,7 @@ function displayTemperature(response) {
 
   function formatDay(timestamp){
     let date = new Date(timestamp*1000);
-    let days = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
+    let days = ["Mon","Tue","Wed","Thur","Fri","Sat","Sun"];
     return days[date.getDay()];
   }
 
@@ -76,7 +76,7 @@ function displayTemperature(response) {
     let forecastHtml = '';
 
     response.data.daily.forEach(function (day, index) {
-      if(index<4){
+      if(index <3){
         forecastHtml += `
         <div  class="forecast-weather">
             <div class="weather-forecast-date">${formatDay(day.time)}</div>
